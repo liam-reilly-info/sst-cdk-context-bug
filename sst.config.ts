@@ -1,5 +1,5 @@
 import { SSTConfig } from "sst";
-import { BucketStack } from "./stacks/bucket-stack"
+import { VpcStack } from "./stacks/vpc-stack"
 
 export default {
   config(_input) {
@@ -9,6 +9,6 @@ export default {
     };
   },
   stacks(app) {
-    app.stack(BucketStack);
+    app.stack(VpcStack);
   }
 } satisfies SSTConfig;
